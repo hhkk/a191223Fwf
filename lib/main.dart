@@ -1,3 +1,12 @@
+
+
+//
+//import 'package:flutter/material.dart';
+//
+//void main() {
+//  runApp(MaterialApp(home: Text('hinonjaqq')));
+//}
+
 import 'package:flutter/material.dart';
 
 import 'package:bloc/bloc.dart';
@@ -20,14 +29,33 @@ import 'blocs/app_state/app_state_bloc.dart';
 void main() {
   assert(() {
     if (fb.apps.isEmpty) {
-      fb.initializeApp(
-        apiKey: 'AIzaSyD8JoU_58xKlQFvva7nS7VHTKc1vUkaosk',
-        authDomain: 'fun-with.firebaseapp.com',
-        databaseURL: 'https://fun-with.firebaseio.com',
-        projectId: 'fun-with',
-        storageBucket: 'fun-with.appspot.com',
-        messagingSenderId: '1006728819313',
-      );
+
+
+        // hk
+        fb.initializeApp(
+          apiKey: "AIzaSyDI-wQeZRwCiSH6GWUCRR1HnMh16lobE98",
+          authDomain: "ustodo191219.firebaseapp.com",
+          databaseURL: "https://ustodo191219.firebaseio.com",
+          projectId: "ustodo191219",
+          storageBucket: "ustodo191219.appspot.com",
+          messagingSenderId: "616582039102",
+          //appId: "1:616582039102:web:c0ca1983645d5618e2336f"
+          // is there a 'name' attribute instead of appid hk?
+        );
+  //
+      // original
+//      fb.initializeApp(
+//        apiKey: 'AIzaSyD8JoU_58xKlQFvva7nS7VHTKc1vUkaosk',
+//        authDomain: 'fun-with.firebaseapp.com',
+//        databaseURL: 'https://fun-with.firebaseio.com',
+//        projectId: 'fun-with',
+//        storageBucket: 'fun-with.appspot.com',
+//        messagingSenderId: '1006728819313',
+//      );
+
+
+
+
     }
     BlocSupervisor.delegate = SimpleBlocDelegate();
     return true;
@@ -53,7 +81,7 @@ class AppInjector extends StatelessWidget {
             ..add(AppStarted());
         }),
         BlocProvider<LoginBloc>(builder: (context) {
-          return LoginBloc(userRepository: _userRepository);
+            return LoginBloc(userRepository: _userRepository);
         }),
         BlocProvider<RegisterBloc>(
           builder: (context) {
@@ -80,7 +108,7 @@ class AppInjector extends StatelessWidget {
         },)
       ],
       child: MaterialApp(
-        title: 'Fun with Flutter',
+        title: 'hk Fun with Flutter ================',
         theme: AppTheme.theme(),
         // initialRoute: '/', // Render Home page from initial route
         // onGenerateRoute: RouteGenerator.generateRoute,

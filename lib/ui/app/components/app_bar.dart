@@ -52,12 +52,12 @@ class FunWithAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: <Widget>[
         BlocBuilder<AuthenticationBloc, AuthenticationState>(
           builder: (context, state) {
-            if (state is Authenticated) {
+            if (state is Authenticated) { // hbk
               return FlatButton(
                 onPressed: () {
                   BlocProvider.of<AuthenticationBloc>(context).add(LoggedOut());
                 },
-                child: const Text('Logout'),
+                child: const Text('Logouthk'),
               );
             } else {
               return FlatButton(
@@ -67,7 +67,7 @@ class FunWithAppBar extends StatelessWidget implements PreferredSizeWidget {
                   );
                 },
                 child: const Text(
-                  'Login',
+                  'sLoginhkxxx',
                   style: TextStyle(
                       color: AppTheme.accentColor, fontWeight: FontWeight.bold),
                 ),

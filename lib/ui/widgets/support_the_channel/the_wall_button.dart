@@ -60,7 +60,7 @@ class _TheWallButtonState extends State<TheWallButton>
                 Card(
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
-                    child: Text(
+                      child: Text(
                       'The Wall!',
                       textAlign: TextAlign.center,
                     ),
