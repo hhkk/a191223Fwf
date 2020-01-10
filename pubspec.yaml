@@ -16,6 +16,15 @@ version: 1.0.0+1
 environment:
   sdk: ">=2.3.0 <3.0.0"
 
+
+# from /Users/hkon/utd/a191223RajaYognFlutterAuth/app/pubspec.yaml
+#  cupertino_icons: ^0.1.2
+#  firebase_auth:
+#  firebase_auth_web:
+
+
+
+
 dependencies:
   flutter:
     sdk: flutter

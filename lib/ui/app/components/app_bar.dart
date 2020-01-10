@@ -57,7 +57,7 @@ class FunWithAppBar extends StatelessWidget implements PreferredSizeWidget {
                 onPressed: () {
                   BlocProvider.of<AuthenticationBloc>(context).add(LoggedOut());
                 },
-                child: const Text('Logouthk'),
+                child: const Text('Logouthk2'),
               );
             } else {
               return FlatButton(

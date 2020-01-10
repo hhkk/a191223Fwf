@@ -268,8 +268,13 @@ class SliverMotivateLogin extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SliverToBoxAdapter(
       child: Center(
-          child: Text(
-              'Sign in to reveal which YouTube channel I think currently provides the best Flutter content.')),
+          child: SelectableText(
+              'Sign in to selectable hbkhbk.')),
     );
+//    return const SliverToBoxAdapter(
+//      child: Center(
+//          child: Text(
+//              'Sign in to reveal which YouTube channel I think currently provides the best Flutter content.')),
+//    );
   }
 }
